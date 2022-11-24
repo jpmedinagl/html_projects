@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Voltron</title>
+  </head>
+
+  <body>
+    <h1 id="title">Voltron Form</h1>
+    <p id="description">Thank you for answering all of the questions</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter your name: <input id="name" name="name" type="text" placeholder="Juan Pablo Medina" required/></label>
+        <label id="email-label">Enter your email: <input id="email" name="email" type="email" placeholder="jpmedinagl@gmail.com" required/></label>
+        <label id="number-label">Enter your date of birth (year): <input id="number" name="number" type="number" min="1900" max="2009" placeholder="2002"></label>
+        <label>Who is your favourite Paladdin?
+          <label for="shiro"><input id="shiro" name="paladdin" type="radio" value="shiro" class="inline"/>Shiro</label>
+          <label for="keith"><input id="keith" name="paladdin" type="radio" value="keith" class="inline"/>Keith</label>
+          <label for="lance"><input id="lance" name="paladdin" type="radio" value="lance" class="inline"/>Lance</label>
+          <label for="hunk"><input id="hunk" name="paladdin" type="radio" value="hunk" class="inline"/>Hunk</label>
+          <label for="pidge"><input id="pidge" name="paladdin" type="radio" value="pidge" class="inline"/>Pidge</label>
+          <label for="allura"><input id="allura" name="paladdin"type="radio" value="allura" class="inline"/>Allura</label>
+        </label>
+        <label>Who was your favourite Villain?
+          <select id="dropdown" name="villain">
+            <option value="">(Select)</option>
+            <option value="1">Zarkon</option>
+            <option value="2">Haggar</option>
+            <option value="3">Lotor</option>
+          </select>
+        </label>
+        <label>How would you describe the show? (Select all that apply)
+          <label for="fun"><input id="fun" type="checkbox" name="show" value="fun" class="inline">Fun</label>
+          <label for="exciting"><input id="exciting" type="checkbox" name="show" value="exciting" class="inline">Exciting</label>
+          <label for="adventurous"><input id="adventurous" type="checkbox" name="show" value="adventurous" class="inline">Adventurous</label>
+          <label for="adventurous"><input id="inspiring" type="checkbox" name="show" value="inspiring" class="inline">Inspiring</label>
+        </label>
+        <label for="rewatch">Would you rewatch the show again?
+          <textarea id="rewatch" name="rewatch" rows="3" cols="30" placeholder="I would rewatch the show again because I liked the action..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
